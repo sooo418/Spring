@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<context:annotation-config/>
+	<context:component-scan base-package="spring.biz"/>
+
+
+
+	<!-- <bean id="dao" class="spring.biz.user.dao.UserDAO_JDBC"/>
+	<bean id="spring" class="spring.biz.user.dao.UserDAO_Spring"/>
+	<bean id="mybatis" class="spring.biz.user.dao.UserDAO_MyBatis"/>
+	
+	<bean id="userservice" 
+		class="spring.biz.user.service.UserServiceImpl"
+		autowire="byName">
+		
+		<constructor-arg ref="mybatis"/>
+		<property name="dao" ref="jdbc" />
+	</bean>
+	
+	<bean id="user01" class="spring.biz.user.vo.UserVO">
+		<constructor-arg value="html01" index="0"/>
+		<constructor-arg value="박길동" index="1"/>
+		<constructor-arg value="@.net" index="3"/>
+		<constructor-arg value="000-8888-7777" index="4"/>
+		<constructor-arg value="서울시" index="5"/>
+		<constructor-arg value="4564" index="2"/>
+	</bean>
+	
+	<bean id="user02" class="spring.biz.user.vo.UserVO">
+		<constructor-arg value="html02" name="userid"/>
+		<constructor-arg value="박길동" name="username"/>
+		<constructor-arg value="@.net" name="email"/>
+		<constructor-arg value="000-8888-7777" name="phone"/>
+		<constructor-arg value="서울시" name="address"/>
+		<constructor-arg value="4564" name="userpwd"/>
+	</bean>
+	
+	<bean id="user03" class="spring.biz.user.vo.UserVO"
+	p:email="aa.@vv.net" p:phone="02-2222-2222"
+	p:userid="user03">
+		<property name="email" value="jj@nn.nn"></property>
+		<property name="address" value=""></property>
+		<property name="phone" value=""></property>
+		<property name="userid" value=""></property>
+		<property name="userpwd" value=""></property>
+		<property name="username" value=""></property>
+	</bean> -->
+	
+</beans>
