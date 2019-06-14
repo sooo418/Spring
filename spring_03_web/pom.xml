@@ -1,15 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.mc</groupId>
-  <artifactId>spring_02_DI_AOP</artifactId>
+  <artifactId>spring_03_web</artifactId>
+  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>spring_02_DI_AOP</name>
+  <name>spring_03_web Maven Webapp</name>
   <url>http://maven.apache.org</url>
-
+  
   <properties>
 	<spring-framework.version>4.3.14.RELEASE</spring-framework.version>  
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,9 +20,30 @@
 		<url>https://code.lds.org/nexus/content/groups/main-repo</url>
 		</repository>
 	</repositories>
-	
+  
   <dependencies>
-  	<!-- @Inject -->
+  	
+  	<!-- web  Servlet-->
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+  	
+    <!-- @Inject -->
 	<dependency>
     	<groupId>javax.inject</groupId>
     	<artifactId>javax.inject</artifactId>
@@ -104,6 +123,8 @@
 		<artifactId>aspectjweaver</artifactId>
 		<version>1.7.2</version>
 	</dependency>
-	
   </dependencies>
+  <build>
+    <finalName>spring_03_web</finalName>
+  </build>
 </project>

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+table {
+	width: 800px;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: black;
+	color: white;
+}
+td{
+	text-align: center;
+}
+
+table tr:nth-child(2n) {
+	background-color: hotpink;
+}
+table tr:hover {
+	background-color: aqua;
+	font-weight: bold;
+	font-size: 110%;
+} 

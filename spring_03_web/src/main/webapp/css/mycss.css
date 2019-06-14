@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#header {
+	/*margin: 0.2em;
+	1em=12point */
+	height:240px;
+	background-color: pink;
+	border: 1px solid;
+	color: black;
+	text-align: center;
+}
+
+#menu {
+	width: 290px;
+	height: 520px;
+	float: left;
+	background-color: red;
+	border: 1px solid;
+	color: black;
+	text-align: left;
+}
+
+#content {
+	width: 290px;
+	height: 520px;
+	float: right;
+	background-color: yellow;
+	border: 1px solid;
+	color: black;
+	text-align: right;
+}
+
+#footer {
+	height: 120px;
+	background-color: skyblue;
+	clear: both;
+	border: 1px solid;
+	color: black;
+	text-align: right;
+}
+/*
+h1:hover{
+	color: white;
+}
+h1:active {
+	color: red;
+}
+*/

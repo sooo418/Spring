@@ -1,0 +1,94 @@
+@charset "UTF-8";
+header {
+	margin: 0px;
+	text-align: center;
+	background-color: lightgreen;
+	height: 120px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+nav ul li {
+	display: inline-block;
+	border-radius: 10px 10px 0 0;
+	background-color: pink;
+	width: 80px;
+	height: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	background-color: lightgreen;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nullspace {
+	height: 35px;
+	background-color: purple;
+}
+
+#left_aside {
+	float: left;
+	background-color: skyblue;
+	width: 20%;
+	height: 550px;
+}
+
+#left_aside ul li {
+	border-radius: 15px;
+	background-color: lightgreen;
+	width: 70px;
+	height: 10px;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid white;
+	margin: 5px;
+	position: relative;
+	right: 40px;
+}
+
+#right_aside {
+	display: table-row;
+	background-color: skyblue;
+	width: 20%;
+	height: 550px;
+	float: right;
+}
+#right_aside ul li{
+	padding: 10px;
+}
+section {
+	display: table-cell;
+	text-align: center;
+}
+article{
+	position: relative;
+	top:10px;
+	left: 225px;
+}
+table{
+	width:300px;
+	height: 150px;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+table tr:nth-child(2n+1) {
+	background-color: gray;
+}
+table tr:first-child {
+	background-color: black;
+	color:yellow;
+}
+footer{
+	background-color: lightpink;
+	clear: both;
+	height: 120px;
+}
