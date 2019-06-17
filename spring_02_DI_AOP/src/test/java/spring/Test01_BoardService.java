@@ -32,7 +32,7 @@ public class Test01_BoardService {
 		int row=service.addPost(post);
 		System.out.println("insert  "+row);
 	}
-	//@Test
+	@Test
 	public void getboard() {
 		System.out.println(service.getBoard(5));
 	}
@@ -60,7 +60,7 @@ public class Test01_BoardService {
 			//System.out.println(post);
 		//}
 	}
-	@Test
+	//@Test
 	public void searchBoard() {
 		for(BoardVO post : service.searchPost("id", "han")) {
 			System.out.println(post);

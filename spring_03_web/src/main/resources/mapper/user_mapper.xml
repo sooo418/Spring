@@ -33,7 +33,7 @@
   </select>
   
   <update id="update" parameterType="uservo">
-	update userinfo set userpwd=#{userpwd},email=#{email},phone=#{phone},address=#{address} where userid=#{userid}
+	update userinfo set email=#{email},phone=#{phone},address=#{address} where userid=#{userid}
   </update>
   
   <delete id="remove">

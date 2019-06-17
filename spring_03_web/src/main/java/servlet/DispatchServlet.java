@@ -15,6 +15,7 @@ public class DispatchServlet extends HttpServlet {
 					throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		
+		
 		String uri = request.getRequestURI();
 		System.out.println(uri);
 		String path = uri.substring(uri.lastIndexOf("/"));

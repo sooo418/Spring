@@ -13,7 +13,7 @@ import spring.biz.user.vo.UserVO;
 @Service("bs")
 public class BoardServiceImpl implements BoardService{
 	
-	@Resource(name = "bds")
+	@Resource(name = "bdm")
 	BoardDAO dao;
 
 	public BoardServiceImpl() {

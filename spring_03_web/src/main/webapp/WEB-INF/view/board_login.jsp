@@ -8,17 +8,20 @@
 </head>
 <body>
 	<h2>로그인 폼</h2>
-	<form id="form1" name="form1" action="login.do" method="post" >
+	<form id="form1" name="form1" action="board_login.do" method="post" >
 		<table border="1">
 			<tr>
+				<td colspan="2">${msg}</td>
+			</tr>
+			<tr>
 				<td>ID</td>
-				<td><input type="text" id="id" name="id"
+				<td><input type="text" id="id" name="userid"
 				required="required"></td>
 				<!-- required를 사용하여 유효성 검증 -->
 			</tr>
 			<tr>
 				<td>PW</td>
-				<td><input type="password" id="pw" name="pw"
+				<td><input type="password" id="pw" name="userpwd"
 				pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{4,7})"
 				required="required"></td>
 				<!-- required를 사용하여 유효성 검증 -->
